@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import br.com.projeto.professorpersonal.R;
 import br.com.projeto.professorpersonal.model.Trainer;
 
+import static br.com.projeto.professorpersonal.ui.ChaveIntent.TRAINERKEY;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String APP_BAR_FORM = "Formulário";
@@ -39,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void configuraAlertDialog(final TextView inputNome, final TextView inputSobrenome, final TextView inputRegistro, final TextView inputIdentidade, final TextView inputEmail) {
+    private void configuraAlertDialog(final TextView inputNome, final TextView inputSobrenome,
+                                      final TextView inputRegistro, final TextView inputIdentidade,
+                                      final TextView inputEmail) {
+
         new AlertDialog.Builder(this)
                 .setTitle(TITULO_CAIXA_ALERTA)
                 .setMessage("Confirmar cadastro?")
@@ -50,12 +55,19 @@ public class MainActivity extends AppCompatActivity {
                                 inputRegistro,
                                 inputIdentidade,
                                 inputEmail);
-                       // new Intent(this, )
+                        vaiParaTelaVerificaComDadosTrainer(trainer);
                     }
                 }).setNegativeButton("não", null)
                 .setIcon(android.R.drawable.arrow_up_float)
                 .create()
                 .show();
+    }
+
+    private void vaiParaTelaVerificaComDadosTrainer(Trainer trainer) {
+        Intent intent = new Intent(MainActivity.this,
+                VerificaDadosActivity.class);
+        intent.putExtra(TRAINERKEY, trainer);
+        startActivity(intent);
     }
 
     private Trainer preencheTrainer(TextView inputNome, TextView inputSobrenome,

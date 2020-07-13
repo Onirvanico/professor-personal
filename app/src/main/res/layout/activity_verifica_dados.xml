@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.VerificaDadosActivity">
+
+    <TextView
+        android:id="@+id/verifica_texto_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:text="Verificação dos Dados"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/verifica_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/verifica_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Nome"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/verifica_texto_titulo"
+        app:layout_constraintStart_toStartOf="@+id/verifica_texto_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/verifica_texto_titulo"
+        tools:text="Nome" />
+
+    <TextView
+        android:id="@+id/verifica_sobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/verifica_nome"
+        app:layout_constraintStart_toStartOf="@+id/verifica_nome"
+        app:layout_constraintTop_toBottomOf="@id/verifica_nome"
+        tools:text="Sobrenome" />
+
+    <TextView
+        android:id="@+id/verifica_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/verifica_sobrenome"
+        app:layout_constraintStart_toStartOf="@+id/verifica_sobrenome"
+        app:layout_constraintTop_toBottomOf="@id/verifica_sobrenome"
+        tools:text="Nº CREF" />
+
+    <TextView
+        android:id="@+id/verifica_identidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/verifica_registro"
+        app:layout_constraintStart_toStartOf="@+id/verifica_registro"
+        app:layout_constraintTop_toBottomOf="@id/verifica_registro"
+        tools:text="Nº identidade" />
+
+    <TextView
+        android:id="@+id/verifica_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/verifica_identidade"
+        app:layout_constraintStart_toStartOf="@+id/verifica_identidade"
+        app:layout_constraintTop_toBottomOf="@id/verifica_identidade"
+        tools:text="Email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

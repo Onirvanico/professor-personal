@@ -22,6 +22,26 @@ public class Trainer implements Parcelable {
         this.email = email;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSobreNome() {
+        return sobreNome;
+    }
+
+    public String getNumeroCREF() {
+        return numeroCREF;
+    }
+
+    public String getNumeroIdentidade() {
+        return numeroIdentidade;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     protected Trainer(Parcel in) {
         nome = in.readString();
         sobreNome = in.readString();
