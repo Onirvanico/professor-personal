@@ -81,4 +81,20 @@
         app:layout_constraintTop_toBottomOf="@id/verifica_identidade"
         tools:text="Email" />
 
+    <TextView
+        android:id="@+id/verifica_informa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="283dp"
+        android:text="@string/texto_informacao"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifica_email" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

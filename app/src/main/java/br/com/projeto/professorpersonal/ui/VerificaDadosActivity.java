@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import br.com.projeto.professorpersonal.R;
 import br.com.projeto.professorpersonal.model.Trainer;

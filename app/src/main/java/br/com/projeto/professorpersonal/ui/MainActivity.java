@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         vaiParaTelaVerificaComDadosTrainer(trainer);
                     }
                 }).setNegativeButton("não", null)
-                .setIcon(android.R.drawable.arrow_up_float)
+                .setIcon(android.R.drawable.ic_dialog_alert)
                 .create()
                 .show();
     }

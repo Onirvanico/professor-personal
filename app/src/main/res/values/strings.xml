@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProfessorPersonal</string>
+    <string name="texto_informacao">Em breve você receberá um email de aprovação do cadastro ou a recusa. Em um prazo de 48h. Por enquanto, estaremos torcendo por você!</string>
 </resources>
