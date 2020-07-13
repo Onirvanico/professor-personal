@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/viewGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/formulario_arredondado"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/main_label_nome"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:text="Cadastro"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_label_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_label_sobrenome"
+        app:layout_constraintLeft_toLeftOf="@+id/viewGroup"
+        app:layout_constraintTop_toBottomOf="@+id/viewGroup"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.02"/>
+
+    <EditText
+        android:id="@+id/main_input_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu nome"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintStart_toEndOf="@id/main_label_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/main_label_nome"
+        android:background="@drawable/formulario_arredondado"/>
+
+    <TextView
+        android:id="@+id/main_label_sobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobrenome:"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/main_label_nome"
+        app:layout_constraintStart_toStartOf="@+id/main_label_nome"
+        />
+
+    <EditText
+        android:id="@+id/main_input_sobrenome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu sobrenome"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintStart_toEndOf="@id/main_label_sobrenome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/main_label_sobrenome"
+        android:background="@drawable/formulario_arredondado"/>
+
+    <TextView
+        android:id="@+id/main_label_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nº CREF:"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/main_label_sobrenome"
+        app:layout_constraintStart_toStartOf="@+id/main_label_sobrenome"
+        />
+
+    <EditText
+        android:id="@+id/main_input_registro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Número do registro"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintStart_toEndOf="@id/main_label_registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/main_label_registro"
+        android:background="@drawable/formulario_arredondado"/>
+
+    <TextView
+        android:id="@+id/main_label_identidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identidade:"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/main_label_registro"
+        app:layout_constraintStart_toStartOf="@+id/main_label_registro"
+        />
+
+    <EditText
+        android:id="@+id/main_input_identidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu nome"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintStart_toEndOf="@id/main_label_identidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/main_label_identidade"
+        android:background="@drawable/formulario_arredondado"/>
+
+    <TextView
+        android:id="@+id/main_label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email:"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/main_label_identidade"
+        app:layout_constraintStart_toStartOf="@+id/main_label_identidade"
+        />
+
+    <EditText
+        android:id="@+id/main_input_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu nome"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintStart_toEndOf="@id/main_label_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/main_label_email"
+        android:background="@drawable/formulario_arredondado"/>
+
+    <Button
+        android:id="@+id/main_bt_cadastrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Cadastrar"
+        android:background="@drawable/formulario_arredondado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_label_email"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
